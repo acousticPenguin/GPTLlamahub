@@ -5,7 +5,7 @@ import json
 from langchain import OpenAI
 from llama_index import SimpleDirectoryReader, GPTSimpleVectorIndex, download_loader, LLMPredictor, PromptHelper
 
-os.environ['OPENAI_API_KEY'] = "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"
+os.environ['OPENAI_API_KEY'] = ""
 documents = SimpleDirectoryReader('./data').load_data()
 llm_predictor = LLMPredictor(llm=OpenAI(temperature=2.0, model_name="text-davinci-002"))
 
